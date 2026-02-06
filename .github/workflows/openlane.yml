@@ -1,18 +1,40 @@
 name: EdgeConv Tapeout
+
 on:
   push:
     branches: [main]
+  workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - run: docker pull efabless/openlane2:latest
-    - run: |
-        docker run --rm -v $PWD:/work -w /work/openlane \
-        efabless/openlane2:latest \
-        python3 -m openlane --flow Classic --config config_typical.json
-    - uses: actions/upload-artifact@v3
-      with:
-        name: gds
-        path: runs/**/final/gds/*.gds
+      - uses: actions/checkout@v4
+      
+      - name: Setup Docker
+        uses: docker/setup-buildx-action@v3
+      
+      - name: Pull OpenLane2
+        run: docker pull efabless/openlane2:latest
+      
+      - name: Run OpenLane2 Flow
+        run: |
+          docker run --rm \
+            -v ${{ github.workspace }}:/work \
+            -w /work/openlane \
+            efabless/openlane2:latest \
+            python3 -m openlane \
+            --flow Classic \
+            --config config_typical.json \
+            --run-tag edgeconv_build
+      
+      - name: Upload GDS
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gds-artifacts
+          path: |
+            runs/**/final/gds/*.gds
+            runs/**/final/reports/*.rpt
+            runs/**/metrics.json
+          retention-days: 30
