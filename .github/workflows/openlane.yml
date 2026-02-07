@@ -3,7 +3,6 @@ name: EdgeConv Tapeout
 on:
   push:
     branches: [main]
-  workflow_dispatch:
 
 jobs:
   build:
@@ -11,19 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Setup Docker
-        uses: docker/setup-buildx-action@v3
-      
-      - name: Pull OpenLane2
-        run: docker pull efabless/openlane2:latest
-      
-      - name: List files (debug)
-        run: |
-          ls -la
-          ls -la openlane/
-          ls -la src/
-      
-      - name: Run OpenLane2 Flow
+      - name: Run OpenLane2
         run: |
           docker run --rm \
             -v ${{ github.workspace }}:/work \
@@ -31,25 +18,10 @@ jobs:
             efabless/openlane2:latest \
             python3 -m openlane \
             --flow Classic \
-            --config config_typical.json \
-            --run-tag edgeconv_build \
-            2>&1 | tee openlane.log
+            --config config_typical.json
       
-      - name: Upload logs (always)
-        uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: logs
-          path: |
-            openlane.log
-            runs/**/logs/**/*.log
-      
-      - name: Upload GDS (on success)
-        uses: actions/upload-artifact@v4
-        if: success()
-        with:
-          name: gds-artifacts
-          path: |
-            runs/**/final/gds/*.gds
-            runs/**/final/reports/*.rpt
-            runs/**/metrics.json
+          name: results
+          path: runs/**/final/*
