@@ -17,6 +17,12 @@ jobs:
       - name: Pull OpenLane2
         run: docker pull efabless/openlane2:latest
       
+      - name: List files (debug)
+        run: |
+          ls -la
+          ls -la openlane/
+          ls -la src/
+      
       - name: Run OpenLane2 Flow
         run: |
           docker run --rm \
@@ -26,15 +32,24 @@ jobs:
             python3 -m openlane \
             --flow Classic \
             --config config_typical.json \
-            --run-tag edgeconv_build
+            --run-tag edgeconv_build \
+            2>&1 | tee openlane.log
       
-      - name: Upload GDS
+      - name: Upload logs (always)
         uses: actions/upload-artifact@v4
         if: always()
+        with:
+          name: logs
+          path: |
+            openlane.log
+            runs/**/logs/**/*.log
+      
+      - name: Upload GDS (on success)
+        uses: actions/upload-artifact@v4
+        if: success()
         with:
           name: gds-artifacts
           path: |
             runs/**/final/gds/*.gds
             runs/**/final/reports/*.rpt
             runs/**/metrics.json
-          retention-days: 30
