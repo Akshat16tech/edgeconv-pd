@@ -10,15 +10,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
+      - name: Pull OpenLane2
+        run: docker pull efabless/openlane2:latest
+      
       - name: Run OpenLane2
-        run: |
-          docker run --rm \
-            -v ${{ github.workspace }}:/work \
-            -w /work/openlane \
-            efabless/openlane2:latest \
-            python3 -m openlane \
-            --flow Classic \
-            --config config_typical.json
+        run: docker run --rm -v ${{ github.workspace }}:/work -w /work/openlane efabless/openlane2:latest python3 -m openlane --flow Classic --config config_typical.json
       
       - uses: actions/upload-artifact@v4
         if: always()
