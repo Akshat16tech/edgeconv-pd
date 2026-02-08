@@ -1,0 +1,3353 @@
+{
+  "creator": "Yosys 0.9 (git sha1 1979e0b)",
+  "modules": {
+    "edgeconv": {
+      "attributes": {
+        "src": "src/edgeconv.v:8"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst_n": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "valid_in": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "pixel_in": {
+          "direction": "input",
+          "bits": [ 5, 6, 7, 8, 9, 10, 11, 12 ]
+        },
+        "digit_out": {
+          "direction": "output",
+          "bits": [ 13, 14, 15, 16 ]
+        },
+        "valid_out": {
+          "direction": "output",
+          "bits": [ 17 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:136:simplemap_reduce$14690": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18 ],
+            "B": [ 19 ],
+            "Y": [ 20 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14691": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 21 ],
+            "B": [ 22 ],
+            "Y": [ 23 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14692": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 25 ],
+            "Y": [ 26 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14693": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 27 ],
+            "B": [ 28 ],
+            "Y": [ 29 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14694": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 30 ],
+            "B": [ 31 ],
+            "Y": [ 32 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14696": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 20 ],
+            "B": [ 23 ],
+            "Y": [ 33 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14697": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 26 ],
+            "B": [ 29 ],
+            "Y": [ 34 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14699": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33 ],
+            "B": [ 34 ],
+            "Y": [ 35 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14701": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 35 ],
+            "B": [ 32 ],
+            "Y": [ 36 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14716": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:93"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 37 ],
+            "B": [ 38 ],
+            "Y": [ 39 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14717": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:93"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 40 ],
+            "B": [ 41 ],
+            "Y": [ 42 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14719": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:93"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 39 ],
+            "B": [ 42 ],
+            "Y": [ 43 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14794": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 44 ],
+            "B": [ 45 ],
+            "Y": [ 46 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14799": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 47 ],
+            "B": [ 48 ],
+            "Y": [ 49 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14808": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 44 ],
+            "B": [ 50 ],
+            "Y": [ 51 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14815": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 52 ],
+            "B": [ 53 ],
+            "Y": [ 54 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14817": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 54 ],
+            "B": [ 55 ],
+            "Y": [ 56 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14842": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 52 ],
+            "B": [ 57 ],
+            "Y": [ 58 ]
+          }
+        },
+        "$auto$simplemap.cc:136:simplemap_reduce$14894": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 52 ],
+            "B": [ 59 ],
+            "Y": [ 60 ]
+          }
+        },
+        "$auto$simplemap.cc:206:simplemap_lognot$14703": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 36 ],
+            "Y": [ 50 ]
+          }
+        },
+        "$auto$simplemap.cc:206:simplemap_lognot$14721": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:93"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 43 ],
+            "Y": [ 61 ]
+          }
+        },
+        "$auto$simplemap.cc:206:simplemap_lognot$14796": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 46 ],
+            "Y": [ 62 ]
+          }
+        },
+        "$auto$simplemap.cc:206:simplemap_lognot$14810": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 51 ],
+            "Y": [ 63 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14724": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:93"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 13 ],
+            "S": [ 43 ],
+            "Y": [ 64 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14725": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:93"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 14 ],
+            "S": [ 43 ],
+            "Y": [ 65 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14726": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:93"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 15 ],
+            "S": [ 43 ],
+            "Y": [ 66 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14727": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:93"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "B": [ 16 ],
+            "S": [ 43 ],
+            "Y": [ 67 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14732": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:91|src/edgeconv.v:75"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13 ],
+            "B": [ 64 ],
+            "S": [ 59 ],
+            "Y": [ 68 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14733": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:91|src/edgeconv.v:75"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "B": [ 65 ],
+            "S": [ 59 ],
+            "Y": [ 69 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14734": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:91|src/edgeconv.v:75"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 66 ],
+            "S": [ 59 ],
+            "Y": [ 70 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14735": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:91|src/edgeconv.v:75"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "B": [ 67 ],
+            "S": [ 59 ],
+            "Y": [ 71 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14767": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 18 ],
+            "S": [ 36 ],
+            "Y": [ 72 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14768": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 73 ],
+            "S": [ 36 ],
+            "Y": [ 74 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14769": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 75 ],
+            "S": [ 36 ],
+            "Y": [ 76 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14770": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 77 ],
+            "S": [ 36 ],
+            "Y": [ 78 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14771": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 79 ],
+            "S": [ 36 ],
+            "Y": [ 80 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14772": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 81 ],
+            "S": [ 36 ],
+            "Y": [ 82 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14773": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 83 ],
+            "S": [ 36 ],
+            "Y": [ 84 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14774": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 85 ],
+            "S": [ 36 ],
+            "Y": [ 86 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14775": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 87 ],
+            "S": [ 36 ],
+            "Y": [ 88 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14776": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 89 ],
+            "S": [ 36 ],
+            "Y": [ 90 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14777": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:77"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 91 ],
+            "B": [ 72 ],
+            "S": [ 4 ],
+            "Y": [ 92 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14778": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:77"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 93 ],
+            "B": [ 74 ],
+            "S": [ 4 ],
+            "Y": [ 94 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14779": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:77"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 95 ],
+            "B": [ 76 ],
+            "S": [ 4 ],
+            "Y": [ 96 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14780": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:77"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 97 ],
+            "B": [ 78 ],
+            "S": [ 4 ],
+            "Y": [ 98 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14781": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:77"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 80 ],
+            "S": [ 4 ],
+            "Y": [ 99 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14782": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:77"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 25 ],
+            "B": [ 82 ],
+            "S": [ 4 ],
+            "Y": [ 100 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14783": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:77"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 27 ],
+            "B": [ 84 ],
+            "S": [ 4 ],
+            "Y": [ 101 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14784": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:77"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 28 ],
+            "B": [ 86 ],
+            "S": [ 4 ],
+            "Y": [ 102 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14785": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:77"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 103 ],
+            "B": [ 88 ],
+            "S": [ 4 ],
+            "Y": [ 104 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14786": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:77"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 105 ],
+            "B": [ 90 ],
+            "S": [ 4 ],
+            "Y": [ 106 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14843": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 91 ],
+            "B": [ 107 ],
+            "S": [ 58 ],
+            "Y": [ 108 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14844": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 93 ],
+            "B": [ 109 ],
+            "S": [ 58 ],
+            "Y": [ 110 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14845": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 95 ],
+            "B": [ 111 ],
+            "S": [ 58 ],
+            "Y": [ 112 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14846": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 97 ],
+            "B": [ 113 ],
+            "S": [ 58 ],
+            "Y": [ 114 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14847": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 115 ],
+            "S": [ 58 ],
+            "Y": [ 116 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14848": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 25 ],
+            "B": [ 117 ],
+            "S": [ 58 ],
+            "Y": [ 118 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14849": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 27 ],
+            "B": [ 119 ],
+            "S": [ 58 ],
+            "Y": [ 120 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14850": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 28 ],
+            "B": [ 121 ],
+            "S": [ 58 ],
+            "Y": [ 122 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14851": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 103 ],
+            "B": [ 123 ],
+            "S": [ 58 ],
+            "Y": [ 124 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14852": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 105 ],
+            "B": [ 125 ],
+            "S": [ 58 ],
+            "Y": [ 126 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14895": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 127 ],
+            "B": [ 128 ],
+            "S": [ 60 ],
+            "Y": [ 129 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14896": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 38 ],
+            "B": [ 130 ],
+            "S": [ 60 ],
+            "Y": [ 131 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14897": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 40 ],
+            "B": [ 132 ],
+            "S": [ 60 ],
+            "Y": [ 133 ]
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_mux$14898": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 134 ],
+            "B": [ 135 ],
+            "S": [ 60 ],
+            "Y": [ 136 ]
+          }
+        },
+        "$auto$simplemap.cc:37:simplemap_not$14797": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "Y": [ 137 ]
+          }
+        },
+        "$auto$simplemap.cc:420:simplemap_dff$14832": {
+          "hide_name": 1,
+          "type": "$_DFF_P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 68 ],
+            "Q": [ 13 ]
+          }
+        },
+        "$auto$simplemap.cc:420:simplemap_dff$14833": {
+          "hide_name": 1,
+          "type": "$_DFF_P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 69 ],
+            "Q": [ 14 ]
+          }
+        },
+        "$auto$simplemap.cc:420:simplemap_dff$14834": {
+          "hide_name": 1,
+          "type": "$_DFF_P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 70 ],
+            "Q": [ 15 ]
+          }
+        },
+        "$auto$simplemap.cc:420:simplemap_dff$14835": {
+          "hide_name": 1,
+          "type": "$_DFF_P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 71 ],
+            "Q": [ 16 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14749": {
+          "hide_name": 1,
+          "type": "$_DFF_PN1_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 56 ],
+            "Q": [ 57 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14750": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 49 ],
+            "Q": [ 59 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14751": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 138 ],
+            "Q": [ 47 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14752": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 139 ],
+            "Q": [ 52 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14818": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 108 ],
+            "Q": [ 91 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14819": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 110 ],
+            "Q": [ 93 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14820": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 112 ],
+            "Q": [ 95 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14821": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 114 ],
+            "Q": [ 97 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14822": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 116 ],
+            "Q": [ 24 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14823": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 118 ],
+            "Q": [ 25 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14824": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 120 ],
+            "Q": [ 27 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14825": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 122 ],
+            "Q": [ 28 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14826": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 124 ],
+            "Q": [ 103 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14827": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 126 ],
+            "Q": [ 105 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14828": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 129 ],
+            "Q": [ 127 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14829": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 131 ],
+            "Q": [ 38 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14830": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 133 ],
+            "Q": [ 40 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14831": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 136 ],
+            "Q": [ 134 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$14840": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 52 ],
+            "Q": [ 17 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14678": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 93 ],
+            "B": [ "1" ],
+            "Y": [ 19 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14679": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 95 ],
+            "B": [ "1" ],
+            "Y": [ 21 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14680": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 97 ],
+            "B": [ "1" ],
+            "Y": [ 22 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14685": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 103 ],
+            "B": [ "1" ],
+            "Y": [ 30 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14686": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 105 ],
+            "B": [ "1" ],
+            "Y": [ 31 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14709": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:93"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 127 ],
+            "B": [ "1" ],
+            "Y": [ 37 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14712": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:93"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 134 ],
+            "B": [ "1" ],
+            "Y": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14722": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 61 ],
+            "B": [ 59 ],
+            "Y": [ 139 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14740": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 62 ],
+            "B": [ 57 ],
+            "Y": [ 138 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14790": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 50 ],
+            "B": [ "1" ],
+            "Y": [ 45 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14800": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 137 ],
+            "B": [ 57 ],
+            "Y": [ 55 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14803": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ "1" ],
+            "Y": [ 44 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14811": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 43 ],
+            "B": [ 59 ],
+            "Y": [ 48 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14813": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 63 ],
+            "B": [ 57 ],
+            "Y": [ 53 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14863": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:434"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 92 ],
+            "B": [ 57 ],
+            "Y": [ 107 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14864": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:434"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 94 ],
+            "B": [ 57 ],
+            "Y": [ 109 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14865": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:434"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 96 ],
+            "B": [ 57 ],
+            "Y": [ 111 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14866": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:434"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 98 ],
+            "B": [ 57 ],
+            "Y": [ 113 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14867": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:434"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 99 ],
+            "B": [ 57 ],
+            "Y": [ 115 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14868": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:434"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 100 ],
+            "B": [ 57 ],
+            "Y": [ 117 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14869": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:434"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 101 ],
+            "B": [ 57 ],
+            "Y": [ 119 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14870": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:434"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 102 ],
+            "B": [ 57 ],
+            "Y": [ 121 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14871": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:434"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 104 ],
+            "B": [ 57 ],
+            "Y": [ 123 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14872": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:434"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 106 ],
+            "B": [ 57 ],
+            "Y": [ 125 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14911": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:434"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 37 ],
+            "B": [ 59 ],
+            "Y": [ 128 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14912": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:434"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 140 ],
+            "B": [ 59 ],
+            "Y": [ 130 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14913": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:434"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 141 ],
+            "B": [ 59 ],
+            "Y": [ 132 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$14914": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:434"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 142 ],
+            "B": [ 59 ],
+            "Y": [ 135 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15230": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:262"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 91 ],
+            "B": [ "1" ],
+            "Y": [ 18 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15263": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:263"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 93 ],
+            "B": [ 91 ],
+            "Y": [ 73 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15264": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:263"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 95 ],
+            "B": [ 143 ],
+            "Y": [ 75 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15265": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:263"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 97 ],
+            "B": [ 144 ],
+            "Y": [ 77 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15266": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:263"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 145 ],
+            "Y": [ 79 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15267": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:263"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 25 ],
+            "B": [ 146 ],
+            "Y": [ 81 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15268": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:263"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 27 ],
+            "B": [ 147 ],
+            "Y": [ 83 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15269": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:263"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 28 ],
+            "B": [ 148 ],
+            "Y": [ 85 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15270": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:263"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 103 ],
+            "B": [ 149 ],
+            "Y": [ 87 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15271": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:263"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 105 ],
+            "B": [ 150 ],
+            "Y": [ 89 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15424": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:92|<techmap.v>:263"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 38 ],
+            "B": [ 127 ],
+            "Y": [ 140 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15425": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:92|<techmap.v>:263"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 40 ],
+            "B": [ 151 ],
+            "Y": [ 141 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15426": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:92|<techmap.v>:263"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 134 ],
+            "B": [ 152 ],
+            "Y": [ 142 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15560": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:92|<techmap.v>:260|<techmap.v>:229"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 40 ],
+            "B": [ 151 ],
+            "Y": [ 152 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15628": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:92|<techmap.v>:260|<techmap.v>:221"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 38 ],
+            "B": [ 127 ],
+            "Y": [ 151 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15699": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:260|<techmap.v>:229"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 103 ],
+            "B": [ 149 ],
+            "Y": [ 150 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15700": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:260|<techmap.v>:229"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 27 ],
+            "B": [ 147 ],
+            "Y": [ 148 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15701": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:260|<techmap.v>:229"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 145 ],
+            "Y": [ 146 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15702": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:260|<techmap.v>:229"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 95 ],
+            "B": [ 143 ],
+            "Y": [ 144 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15709": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:260|<techmap.v>:229"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 153 ],
+            "B": [ 145 ],
+            "Y": [ 147 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15724": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:260|<techmap.v>:222"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 154 ],
+            "B": [ 153 ],
+            "Y": [ 155 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15737": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:260|<techmap.v>:222"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 28 ],
+            "B": [ 27 ],
+            "Y": [ 154 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15738": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:260|<techmap.v>:222"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 25 ],
+            "B": [ 24 ],
+            "Y": [ 153 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15739": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:260|<techmap.v>:222"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 97 ],
+            "B": [ 95 ],
+            "Y": [ 156 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15746": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:260|<techmap.v>:221"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 155 ],
+            "B": [ 145 ],
+            "Y": [ 149 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15754": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:260|<techmap.v>:221"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 156 ],
+            "B": [ 143 ],
+            "Y": [ 145 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$15770": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:260|<techmap.v>:221"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 93 ],
+            "B": [ 91 ],
+            "Y": [ 143 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\class_cnt[3:0]": {
+          "hide_name": 1,
+          "bits": [ 129, 131, 133, 136 ],
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          }
+        },
+        "$0\\pixel_cnt[9:0]": {
+          "hide_name": 1,
+          "bits": [ 108, 110, 112, 114, 116, 118, 120, 122, 124, 126 ],
+          "attributes": {
+            "src": "src/edgeconv.v:63"
+          }
+        },
+        "$0\\result_reg[7:0]": {
+          "hide_name": 1,
+          "bits": [ 68, 69, 70, 71, 157, 158, 159, 160 ],
+          "attributes": {
+            "src": "src/edgeconv.v:63",
+            "unused_bits": "4 5 6 7"
+          }
+        },
+        "$add$src/edgeconv.v:80$4022_Y": {
+          "hide_name": 1,
+          "bits": [ 18, 73, 75, 77, 79, 81, 83, 85, 87, 89, 161, "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "src/edgeconv.v:80",
+            "unused_bits": "10"
+          }
+        },
+        "$add$src/edgeconv.v:92$4024_Y": {
+          "hide_name": 1,
+          "bits": [ 37, 140, 141, 142, 162, "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "src/edgeconv.v:92",
+            "unused_bits": "4"
+          }
+        },
+        "$auto$fsm_map.cc:118:implement_pattern_cache$14606": {
+          "hide_name": 1,
+          "bits": [ 55 ],
+          "attributes": {
+          }
+        },
+        "$auto$fsm_map.cc:118:implement_pattern_cache$14610": {
+          "hide_name": 1,
+          "bits": [ 53 ],
+          "attributes": {
+          }
+        },
+        "$auto$fsm_map.cc:118:implement_pattern_cache$14615": {
+          "hide_name": 1,
+          "bits": [ 48 ],
+          "attributes": {
+          }
+        },
+        "$auto$fsm_map.cc:118:implement_pattern_cache$14620": {
+          "hide_name": 1,
+          "bits": [ 138 ],
+          "attributes": {
+          }
+        },
+        "$auto$fsm_map.cc:118:implement_pattern_cache$14624": {
+          "hide_name": 1,
+          "bits": [ 139 ],
+          "attributes": {
+          }
+        },
+        "$auto$fsm_map.cc:170:map_fsm$14600": {
+          "hide_name": 1,
+          "bits": [ 56, 49, 138, 139 ],
+          "attributes": {
+          }
+        },
+        "$auto$fsm_map.cc:74:implement_pattern_cache$14604": {
+          "hide_name": 1,
+          "bits": [ 137 ],
+          "attributes": {
+          }
+        },
+        "$auto$fsm_map.cc:74:implement_pattern_cache$14608": {
+          "hide_name": 1,
+          "bits": [ 63 ],
+          "attributes": {
+          }
+        },
+        "$auto$fsm_map.cc:74:implement_pattern_cache$14613": {
+          "hide_name": 1,
+          "bits": [ 43 ],
+          "attributes": {
+          }
+        },
+        "$auto$fsm_map.cc:74:implement_pattern_cache$14618": {
+          "hide_name": 1,
+          "bits": [ 62 ],
+          "attributes": {
+          }
+        },
+        "$auto$fsm_map.cc:74:implement_pattern_cache$14622": {
+          "hide_name": 1,
+          "bits": [ 61 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:127:simplemap_reduce$14689": {
+          "hide_name": 1,
+          "bits": [ 20, 23, 26, 29, 32 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:127:simplemap_reduce$14695": {
+          "hide_name": 1,
+          "bits": [ 33, 34 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:127:simplemap_reduce$14698": {
+          "hide_name": 1,
+          "bits": [ 35 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:127:simplemap_reduce$14715": {
+          "hide_name": 1,
+          "bits": [ 39, 42 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:127:simplemap_reduce$14814": {
+          "hide_name": 1,
+          "bits": [ 54 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:250:simplemap_eqne$14675": {
+          "hide_name": 1,
+          "bits": [ 18, 19, 21, 22, 24, 25, 27, 28, 30, 31 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:250:simplemap_eqne$14707": {
+          "hide_name": 1,
+          "bits": [ 37, 38, 40, 41 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:250:simplemap_eqne$14787": {
+          "hide_name": 1,
+          "bits": [ 44, 45 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:250:simplemap_eqne$14801": {
+          "hide_name": 1,
+          "bits": [ 44, 50 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_eqne$14687": {
+          "hide_name": 1,
+          "bits": [ 36 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_eqne$14791": {
+          "hide_name": 1,
+          "bits": [ 46 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_eqne$14805": {
+          "hide_name": 1,
+          "bits": [ 51 ],
+          "attributes": {
+          }
+        },
+        "$procmux$14469_Y": {
+          "hide_name": 1,
+          "bits": [ 64, 65, 66, 67, 163, 164, 165, 166 ],
+          "attributes": {
+            "unused_bits": "4 5 6 7"
+          }
+        },
+        "$procmux$14474.B_AND_S": {
+          "hide_name": 1,
+          "bits": [ "0", "0", "0", "0", 128, 130, 132, 135 ],
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:432"
+          }
+        },
+        "$procmux$14478.B_AND_S": {
+          "hide_name": 1,
+          "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 107, 109, 111, 113, 115, 117, 119, 121, 123, 125 ],
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:432"
+          }
+        },
+        "$procmux$14481_Y": {
+          "hide_name": 1,
+          "bits": [ 72, 74, 76, 78, 80, 82, 84, 86, 88, 90 ],
+          "attributes": {
+          }
+        },
+        "$procmux$14483_Y": {
+          "hide_name": 1,
+          "bits": [ 92, 94, 96, 98, 99, 100, 101, 102, 104, 106 ],
+          "attributes": {
+          }
+        },
+        "$techmap$add$src/edgeconv.v:80$4022.$auto$alumacc.cc:474:replace_alu$14672.lcu.g": {
+          "hide_name": 1,
+          "bits": [ 91, 143, 144, 145, 146, 147, 148, 149, 150, 161, "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:260|<techmap.v>:203",
+            "unused_bits": "9"
+          }
+        },
+        "$techmap$add$src/edgeconv.v:92$4024.$auto$alumacc.cc:474:replace_alu$14704.lcu.g": {
+          "hide_name": 1,
+          "bits": [ 127, 151, 152, 162, "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "src/edgeconv.v:92|<techmap.v>:260|<techmap.v>:203",
+            "unused_bits": "3"
+          }
+        },
+        "$techmap$procmux$14474.$reduce_or$<techmap.v>:445$14741_Y": {
+          "hide_name": 1,
+          "bits": [ 60 ],
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          }
+        },
+        "$techmap$procmux$14478.$reduce_or$<techmap.v>:445$14753_Y": {
+          "hide_name": 1,
+          "bits": [ 58 ],
+          "attributes": {
+            "src": "src/edgeconv.v:98|src/edgeconv.v:75|<techmap.v>:445"
+          }
+        },
+        "$techmap$techmap$add$src/edgeconv.v:80$4022.$auto$alumacc.cc:474:replace_alu$14672.lcu.$and$<techmap.v>:222$15064_Y": {
+          "hide_name": 1,
+          "bits": [ 156 ],
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:260|<techmap.v>:222"
+          }
+        },
+        "$techmap$techmap$add$src/edgeconv.v:80$4022.$auto$alumacc.cc:474:replace_alu$14672.lcu.$and$<techmap.v>:222$15067_Y": {
+          "hide_name": 1,
+          "bits": [ 153 ],
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:260|<techmap.v>:222"
+          }
+        },
+        "$techmap$techmap$add$src/edgeconv.v:80$4022.$auto$alumacc.cc:474:replace_alu$14672.lcu.$and$<techmap.v>:222$15070_Y": {
+          "hide_name": 1,
+          "bits": [ 154 ],
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:260|<techmap.v>:222"
+          }
+        },
+        "$techmap$techmap$add$src/edgeconv.v:80$4022.$auto$alumacc.cc:474:replace_alu$14672.lcu.$and$<techmap.v>:222$15112_Y": {
+          "hide_name": 1,
+          "bits": [ 155 ],
+          "attributes": {
+            "src": "src/edgeconv.v:80|<techmap.v>:260|<techmap.v>:222"
+          }
+        },
+        "class_cnt": {
+          "hide_name": 0,
+          "bits": [ 127, 38, 40, 134 ],
+          "attributes": {
+            "src": "src/edgeconv.v:27"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "src/edgeconv.v:9"
+          }
+        },
+        "digit_out": {
+          "hide_name": 0,
+          "bits": [ 13, 14, 15, 16 ],
+          "attributes": {
+            "src": "src/edgeconv.v:13"
+          }
+        },
+        "fc_acc": {
+          "hide_name": 0,
+          "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "src/edgeconv.v:41"
+          }
+        },
+        "feat_x": {
+          "hide_name": 0,
+          "bits": [ "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "src/edgeconv.v:45"
+          }
+        },
+        "feat_y": {
+          "hide_name": 0,
+          "bits": [ "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "src/edgeconv.v:45"
+          }
+        },
+        "i": {
+          "hide_name": 0,
+          "bits": [ "0", "1", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "src/edgeconv.v:50"
+          }
+        },
+        "j": {
+          "hide_name": 0,
+          "bits": [ "0", "0", "1", "0", "0", "0", "1", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "src/edgeconv.v:50"
+          }
+        },
+        "pixel_cnt": {
+          "hide_name": 0,
+          "bits": [ 91, 93, 95, 97, 24, 25, 27, 28, 103, 105 ],
+          "attributes": {
+            "src": "src/edgeconv.v:26"
+          }
+        },
+        "pixel_in": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8, 9, 10, 11, 12 ],
+          "attributes": {
+            "src": "src/edgeconv.v:12"
+          }
+        },
+        "result_reg": {
+          "hide_name": 0,
+          "bits": [ 13, 14, 15, 16, 167, 168, 169, 170 ],
+          "attributes": {
+            "src": "src/edgeconv.v:28",
+            "unused_bits": "4 5 6 7"
+          }
+        },
+        "rst_n": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "src/edgeconv.v:10"
+          }
+        },
+        "state": {
+          "hide_name": 0,
+          "bits": [ 57, 59, 47, 52 ],
+          "attributes": {
+            "onehot": 1
+          }
+        },
+        "valid_in": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "src/edgeconv.v:11"
+          }
+        },
+        "valid_out": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "src/edgeconv.v:14"
+          }
+        },
+        "valid_reg": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "src/edgeconv.v:29"
+          }
+        }
+      }
+    },
+    "edgeconv_top": {
+      "attributes": {
+        "top": 1,
+        "src": "src/edgeconv_top.v:3"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst_n": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "valid_in": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "pixel_in": {
+          "direction": "input",
+          "bits": [ 5, 6, 7, 8, 9, 10, 11, 12 ]
+        },
+        "digit_out": {
+          "direction": "output",
+          "bits": [ 13, 14, 15, 16 ]
+        },
+        "valid_out": {
+          "direction": "output",
+          "bits": [ 17 ]
+        }
+      },
+      "cells": {
+        "core": {
+          "hide_name": 0,
+          "type": "edgeconv",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "src/edgeconv_top.v:11"
+          },
+          "port_directions": {
+            "clk": "input",
+            "digit_out": "output",
+            "pixel_in": "input",
+            "rst_n": "input",
+            "valid_in": "input",
+            "valid_out": "output"
+          },
+          "connections": {
+            "clk": [ 2 ],
+            "digit_out": [ 13, 14, 15, 16 ],
+            "pixel_in": [ 5, 6, 7, 8, 9, 10, 11, 12 ],
+            "rst_n": [ 3 ],
+            "valid_in": [ 4 ],
+            "valid_out": [ 17 ]
+          }
+        }
+      },
+      "netnames": {
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "src/edgeconv_top.v:4"
+          }
+        },
+        "digit_out": {
+          "hide_name": 0,
+          "bits": [ 13, 14, 15, 16 ],
+          "attributes": {
+            "src": "src/edgeconv_top.v:8"
+          }
+        },
+        "pixel_in": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8, 9, 10, 11, 12 ],
+          "attributes": {
+            "src": "src/edgeconv_top.v:7"
+          }
+        },
+        "rst_n": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "src/edgeconv_top.v:5"
+          }
+        },
+        "valid_in": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "src/edgeconv_top.v:6"
+          }
+        },
+        "valid_out": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "src/edgeconv_top.v:9"
+          }
+        }
+      }
+    }
+  }
+}

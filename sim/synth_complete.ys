@@ -1,0 +1,8 @@
+read_verilog src/edgeconv.v
+read_verilog src/edgeconv_top.v
+hierarchy -top edgeconv_top
+proc; opt; fsm; opt; memory; opt
+techmap; opt
+write_verilog -noattr edgeconv_top_synth.v
+write_json edgeconv_top_synth.json
+stat

@@ -1,0 +1,156 @@
+
+Magic 8.3 revision 105 - Compiled on Mon, 06 Dec 2021 22:32:27 +0200.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Loading "magic_flow.tcl" from command line.
+Could not find file 'sky130A.tech' in any of these directories:
+         . /usr/lib/x86_64-linux-gnu/magic/sys /usr/lib/x86_64-linux-gnu/magic/sys/current
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  100.00 x 100.00  (  0.00,  0.00 ), ( 100.00,  100.00)  10000.00  
+lambda:      100 x 100     (     0,  0    ), (   100,  100  )  10000     
+Unrecognized layer: core
+Layer names are:
+    mag or magnet
+    f or fence
+    r or rotate
+    $
+    *
+    errors
+    labels
+    subcell
+    connect
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  110.00 x 10.00   ( -5.00, -5.00 ), ( 105.00,  5.00 )  1100.00   
+lambda:      110 x 10      (    -5, -5    ), (   105,  5    )  1100      
+Unrecognized layer: met4
+Layer names are:
+    mag or magnet
+    f or fence
+    r or rotate
+    $
+    *
+    errors
+    labels
+    subcell
+    connect
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   10.00 x 110.00  ( -5.00, -5.00 ), (  5.00,  105.00)  1100.00   
+lambda:       10 x 110     (    -5, -5    ), (     5,  105  )  1100      
+Unrecognized layer: met5
+Layer names are:
+    mag or magnet
+    f or fence
+    r or rotate
+    $
+    *
+    errors
+    labels
+    subcell
+    connect
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   10.00 x 110.00  ( 95.00, -5.00 ), ( 105.00,  105.00)  1100.00   
+lambda:       10 x 110     (    95, -5    ), (   105,  105  )  1100      
+Unrecognized layer: met5
+Layer names are:
+    mag or magnet
+    f or fence
+    r or rotate
+    $
+    *
+    errors
+    labels
+    subcell
+    connect
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  110.00 x 10.00   ( -5.00,  95.00), ( 105.00,  105.00)  1100.00   
+lambda:      110 x 10      (    -5,  95   ), (   105,  105  )  1100      
+Unrecognized layer: met4
+Layer names are:
+    mag or magnet
+    f or fence
+    r or rotate
+    $
+    *
+    errors
+    labels
+    subcell
+    connect
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   10.00 x 10.00   ( 45.00,  100.00), ( 55.00,  110.00)  100.00    
+lambda:       10 x 10      (    45,  100  ), (    55,  110  )  100       
+Unrecognized layer: met2
+Layer names are:
+    mag or magnet
+    f or fence
+    r or rotate
+    $
+    *
+    errors
+    labels
+    subcell
+    connect
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   10.00 x 10.00   ( 65.00,  100.00), ( 75.00,  110.00)  100.00    
+lambda:       10 x 10      (    65,  100  ), (    75,  110  )  100       
+Unrecognized layer: met2
+Layer names are:
+    mag or magnet
+    f or fence
+    r or rotate
+    $
+    *
+    errors
+    labels
+    subcell
+    connect
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   10.00 x 10.00   (-10.00,  40.00), (  0.00,  50.00)  100.00    
+lambda:       10 x 10      (   -10,  40   ), (     0,  50   )  100       
+Unrecognized layer: met2
+Layer names are:
+    mag or magnet
+    f or fence
+    r or rotate
+    $
+    *
+    errors
+    labels
+    subcell
+    connect
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   10.00 x 10.00   (-10.00,  55.00), (  0.00,  65.00)  100.00    
+lambda:       10 x 10      (   -10,  55   ), (     0,  65   )  100       
+Unrecognized layer: met2
+Layer names are:
+    mag or magnet
+    f or fence
+    r or rotate
+    $
+    *
+    errors
+    labels
+    subcell
+    connect
+Error parsing "magic_flow.tcl": invalid command name "0"
+Using technology "minimum", version 0.0
+% 

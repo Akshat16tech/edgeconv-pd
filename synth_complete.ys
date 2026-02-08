@@ -1,0 +1,21 @@
+# Complete synthesis for edgeconv_top
+read_verilog src/edgeconv.v
+read_verilog src/edgeconv_top.v
+
+# Hierarchy and optimization
+hierarchy -top edgeconv_top
+proc; opt; fsm; opt; memory; opt
+
+# Generic techmap
+techmap; opt
+
+# Write outputs
+write_verilog -noattr edgeconv_top_synth.v
+write_json edgeconv_top_synth.json
+
+# Detailed statistics
+stat -width -liberty
+stat
+
+# Show critical paths (estimated)
+show -format dot -prefix edgeconv_top_synth
