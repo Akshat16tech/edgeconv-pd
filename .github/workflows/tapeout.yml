@@ -3,18 +3,26 @@ name: EdgeConv Tapeout
 on:
   push:
     branches: [main]
-  workflow_dispatch:
 
 jobs:
-  harden:
+  build:
     runs-on: ubuntu-22.04
+    container: efabless/openlane2:2.1.0
     steps:
       - uses: actions/checkout@v4
       
-      - name: Harden using OpenLane
-        uses: efabless/openlane-action@v2.1.0
+      - name: Setup PDK
+        run: |
+          mkdir -p /home/runner/.volare
+          volare enable --pdk sky130A --pdk-root /home/runner/.volare
+      
+      - name: Run OpenLane
+        run: |
+          cd designs/edgeconv_top
+          openlane --flow Classic --config config.json --pdk-root /home/runner/.volare
+      
+      - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          openlane-tag: 2.1.0
-          design-name: edgeconv_top
-          designs-directory: designs
-          pdk: sky130A
+          name: gds-output
+          path: designs/edgeconv_top/runs/**/final/
