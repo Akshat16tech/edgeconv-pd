@@ -1,0 +1,17 @@
+{
+  "DESIGN_NAME": "edgeconv_top",
+  "VERILOG_FILES": ["dir::synth.v"],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 25.0,
+  "DESIGN_IS_CORE": true,
+  "FP_CORE_UTIL": 50,
+  "PL_TARGET_DENSITY_PCT": 60,
+  "SYNTH_STRATEGY": "AREA 2",
+  "CTS_TARGET_SKEW": 150,
+  "DIODE_INSERTION_STRATEGY": 3,
+  "GRT_ADJUSTMENT": 0.3,
+  "RUN_CTS": true,
+  "RUN_FILL_INSERTION": true,
+  "RUN_MAGIC_DRC": true,
+  "RUN_LVS": true
+}

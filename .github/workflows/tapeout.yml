@@ -1,1 +1,20 @@
-[name: EdgeConv Tapeout - Efabless Official... paste from above]
+name: EdgeConv Tapeout
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  harden:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Harden using OpenLane
+        uses: efabless/openlane-action@v2.1.0
+        with:
+          openlane-tag: 2.1.0
+          design-name: edgeconv_top
+          designs-directory: designs
+          pdk: sky130A
