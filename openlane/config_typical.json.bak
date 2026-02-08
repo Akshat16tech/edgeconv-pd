@@ -1,0 +1,46 @@
+{
+  "DESIGN_NAME": "edgeconv_top",
+  "VERILOG_FILES": [
+    "dir::../src/edgeconv.v",
+    "dir::../src/edgeconv_top.v"
+  ],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 25.0,
+  "CLOCK_NET": "clk",
+  "DESIGN_IS_CORE": true,
+  "FP_CORE_UTIL": 50,
+  "FP_ASPECT_RATIO": 1.0,
+  "FP_SIZING": "relative",
+  "PL_TARGET_DENSITY_PCT": 60,
+  "PL_TIME_DRIVEN": true,
+  "PL_RESIZER_DESIGN_OPTIMIZATIONS": true,
+  "PL_RESIZER_TIMING_OPTIMIZATIONS": true,
+  "PL_MAX_FANOUT": 6,
+  "SYNTH_STRATEGY": "AREA 2",
+  "SYNTH_MAX_FANOUT": 6,
+  "SYNTH_BUFFERING": true,
+  "CTS_TARGET_SKEW": 150,
+  "CTS_ROOT_BUFFER": "sky130_fd_sc_hd__clkbuf_16",
+  "GRT_ADJUSTMENT": 0.3,
+  "GRT_ALLOW_CONGESTION": false,
+  "RT_MIN_LAYER": "met1",
+  "RT_MAX_LAYER": "met5",
+  "DIODE_INSERTION_STRATEGY": 3,
+  "FILL_INSERTION": true,
+  "TAP_DECAP_INSERTION": true,
+  "RUN_CTS": true,
+  "RUN_FILL_INSERTION": true,
+  "RUN_TAP_DECAP_INSERTION": true,
+  "RUN_DRT": true,
+  "RUN_MAGIC_DRC": true,
+  "RUN_LVS": true,
+  "RUN_ANTENNA_CHECK": true,
+  "pdk::sky130A": {
+    "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
+    "FP_CORE_UTIL": 50,
+    "PL_TARGET_DENSITY_PCT": 60,
+    "scl::sky130_fd_sc_hd": {
+      "CLOCK_PERIOD": 25.0
+    }
+  }
+}

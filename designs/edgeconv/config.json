@@ -1,0 +1,6 @@
+{
+  "DESIGN_NAME": "edgeconv_top",
+  "VERILOG_FILES": "dir::src/*.v",
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 25.0
+}
