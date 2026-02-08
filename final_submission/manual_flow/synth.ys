@@ -1,0 +1,8 @@
+read_verilog ../designs/edgeconv_top/src/edgeconv.v
+read_verilog ../designs/edgeconv_top/src/edgeconv_top.v
+hierarchy -top edgeconv_top
+synth -top edgeconv_top
+abc -g aig
+opt -fast
+write_verilog synth.v
+stat
